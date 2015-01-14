@@ -14,6 +14,7 @@
 		0FC67A2D1A671BF2003FD373 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC67A2C1A671BF2003FD373 /* Images.xcassets */; };
 		0FC67A301A671BF2003FD373 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC67A2E1A671BF2003FD373 /* LaunchScreen.xib */; };
 		0FC67A3C1A671BF2003FD373 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC67A3B1A671BF2003FD373 /* FarkleTests.m */; };
+		0FC67A481A671D9D003FD373 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC67A471A671D9D003FD373 /* DieLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		0FC67A351A671BF2003FD373 /* FarkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC67A3A1A671BF2003FD373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC67A3B1A671BF2003FD373 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		0FC67A461A671D9D003FD373 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		0FC67A471A671D9D003FD373 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,8 @@
 			children = (
 				0FC67A231A671BF2003FD373 /* AppDelegate.h */,
 				0FC67A241A671BF2003FD373 /* AppDelegate.m */,
-				0FC67A261A671BF2003FD373 /* ViewController.h */,
-				0FC67A271A671BF2003FD373 /* ViewController.m */,
 				0FC67A291A671BF2003FD373 /* Main.storyboard */,
+				0FC67A451A671C66003FD373 /* View */,
 				0FC67A2C1A671BF2003FD373 /* Images.xcassets */,
 				0FC67A2E1A671BF2003FD373 /* LaunchScreen.xib */,
 				0FC67A1F1A671BF2003FD373 /* Supporting Files */,
@@ -117,6 +119,25 @@
 				0FC67A3A1A671BF2003FD373 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FC67A451A671C66003FD373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FC67A261A671BF2003FD373 /* ViewController.h */,
+				0FC67A271A671BF2003FD373 /* ViewController.m */,
+				0FC67A491A671DA1003FD373 /* Model */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0FC67A491A671DA1003FD373 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FC67A461A671D9D003FD373 /* DieLabel.h */,
+				0FC67A471A671D9D003FD373 /* DieLabel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +243,7 @@
 				0FC67A281A671BF2003FD373 /* ViewController.m in Sources */,
 				0FC67A251A671BF2003FD373 /* AppDelegate.m in Sources */,
 				0FC67A221A671BF2003FD373 /* main.m in Sources */,
+				0FC67A481A671D9D003FD373 /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
