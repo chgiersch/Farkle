@@ -9,19 +9,32 @@
 #import "DieLabel.h"
 #import <UIKit/UIKit.h>
 
+
 @implementation DieLabel
 
--(IBAction)onTapped:(UITapGestureRecognizer *)sender
+-(IBAction)onDiceTapped:(UITapGestureRecognizer *)sender
 {
-    NSLog(@"sdfsf");
+    [self.delegate dieLabelSelected:sender];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+
+-(void)roll
+{
+    int randomNumber = arc4random_uniform(6)+1;
+    self.text = [NSString stringWithFormat:@"%i", randomNumber];
+//    [self.delegate dieLabelDidRollWithValue:randomNumber];
 }
-*/
+
+- (instancetype)initWithValue:(int)value
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.value = value;
+    }
+    return self;
+}
 
 @end
