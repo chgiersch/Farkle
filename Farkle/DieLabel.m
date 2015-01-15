@@ -12,29 +12,49 @@
 
 @implementation DieLabel
 
--(IBAction)onDiceTapped:(UITapGestureRecognizer *)sender
-{
-    [self.delegate dieLabelSelected:sender];
-}
-
-
+//- (instancetype)initWithValue:(int)value
+//{
+//    self = [super init];
+//
+//    if (self)
+//    {
+//        self.value = value;
+//        self.text = 
+//        self.isSelected = FALSE;
+//    }
+//    return self;
+//}
 
 -(void)roll
 {
     int randomNumber = arc4random_uniform(6)+1;
     self.text = [NSString stringWithFormat:@"%i", randomNumber];
-//    [self.delegate dieLabelDidRollWithValue:randomNumber];
+    //    [self.delegate dieLabelDidRollWithValue:randomNumber];
+    self.isSelected = false;
 }
 
-- (instancetype)initWithValue:(int)value
+- (void)diceClicked
 {
-    self = [super init];
-    
-    if (self)
+    if (self.isSelected)
     {
-        self.value = value;
+        self.isSelected = FALSE;
+        self.alpha = 1;
     }
-    return self;
+    else
+    {
+        self.isSelected = true;
+        self.alpha = 0.3;
+    }
 }
+
+-(IBAction)onDiceTapped:(UITapGestureRecognizer *)sender
+{
+    [self diceClicked];
+
+    [self.delegate dieLabelSelected:self];
+    NSLog(@"Before view controller: %@", self.text);
+}
+
+
 
 @end

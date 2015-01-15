@@ -12,15 +12,21 @@
 
 - (void) dieLabelSelected:(UILabel *) dieLabel;
 
+@optional
+
+-(IBAction)onDiceTapped:(UITapGestureRecognizer *)sender;
+
+
 
 @end
 
 @interface DieLabel :UILabel
 
-@property int value;
+@property BOOL isSelected;
+//@property int value;
 
 - (void)roll;
-- (instancetype)initWithValue:(int)value;
+//- (instancetype)initWithValue:(int)value;
 
 
 

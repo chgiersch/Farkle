@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -95,12 +95,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="dieFive" destination="kEU-XU-wMH" id="fSc-Xj-sw2"/>
-                        <outlet property="dieFour" destination="iw8-x4-cY5" id="XTs-ea-PXE"/>
-                        <outlet property="dieOne" destination="wtD-Wv-q3N" id="uah-ks-If3"/>
-                        <outlet property="dieSix" destination="xOi-jn-SSK" id="5Vm-DV-dQy"/>
-                        <outlet property="dieThree" destination="LAK-hk-239" id="cIl-hw-ZkZ"/>
-                        <outlet property="dieTwo" destination="8zY-05-T0z" id="Mep-GT-On3"/>
                         <outletCollection property="diceCollection" destination="wtD-Wv-q3N" id="Q2O-WC-Xbk"/>
                         <outletCollection property="diceCollection" destination="8zY-05-T0z" id="v8a-2y-uzG"/>
                         <outletCollection property="diceCollection" destination="LAK-hk-239" id="btC-Ey-geW"/>
